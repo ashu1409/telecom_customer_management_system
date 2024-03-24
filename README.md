@@ -36,6 +36,16 @@ This is the frontend component of the Telecom Customer Management System. It pro
 3. Start the development server:
    npm start
 
-Note - I committed the main files only where need to to changes according to requirements of the project
+Note - The Main changes has been done according to requirements of the project are :
+
+public/index.html
+src/components/CustomerForm.js
+src/components/PlanSelection.js
+src/components/CustomerTable.js
+src/services/api.js
+src/App.js
+src/index.js
+
+please focus on these files
 
 
