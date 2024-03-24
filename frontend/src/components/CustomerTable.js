@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '../services/api';
 
 const CustomerTable = () => {
   const [customers, setCustomers] = useState([]);
@@ -7,7 +7,7 @@ const CustomerTable = () => {
   useEffect(() => {
     const fetchCustomers = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/customers');
+        const res = await api.get('/customers');
         setCustomers(res.data);
       } catch (err) {
         console.error(err);
@@ -18,13 +18,17 @@ const CustomerTable = () => {
 
   return (
     <div>
+      <h2>Customer Table</h2>
       <table>
         <thead>
           <tr>
             <th>Name</th>
             <th>Email</th>
-            <th>Mobile Number</th>
-            {/* Add more columns as needed */}
+            <th>Assigned Mobile Number</th>
+            <th>Plan</th>
+            <th>Plan Cost</th>
+            <th>Validity</th>
+            <th>Plan Status</th>
           </tr>
         </thead>
         <tbody>
@@ -32,8 +36,11 @@ const CustomerTable = () => {
             <tr key={customer.id}>
               <td>{customer.name}</td>
               <td>{customer.email}</td>
-              <td>{customer.mobileNumber}</td>
-              {/* Render other customer details */}
+              <td>{customer.assignedMobileNumber}</td>
+              <td>{customer.plan}</td>
+              <td>{customer.planCost}</td>
+              <td>{customer.validity}</td>
+              <td>{customer.planStatus}</td>
             </tr>
           ))}
         </tbody>
