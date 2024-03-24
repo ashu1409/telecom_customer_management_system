@@ -38,13 +38,13 @@ This is the frontend component of the Telecom Customer Management System. It pro
 
 Note - The Main changes has been done according to requirements of the project are :
 
-public/index.html
-src/components/CustomerForm.js
-src/components/PlanSelection.js
-src/components/CustomerTable.js
-src/services/api.js
-src/App.js
-src/index.js
+1. public/index.html
+2. src/components/CustomerForm.js
+3. src/components/PlanSelection.js
+4. src/components/CustomerTable.js
+5. src/services/api.js
+6. src/App.js
+7. src/index.js
 
 please focus on these files
 
