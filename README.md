@@ -28,3 +28,12 @@ This is the frontend component of the Telecom Customer Management System. It pro
 
    ```bash
    git clone https://github.com/ashu1409/telecom_customer_management_system
+   
+2.Install dependencies:
+   cd telecom-customer-management-system/frontend
+   npm install
+
+3. Start the development server:
+   npm start
+
+
