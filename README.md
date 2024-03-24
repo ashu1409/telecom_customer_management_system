@@ -36,4 +36,6 @@ This is the frontend component of the Telecom Customer Management System. It pro
 3. Start the development server:
    npm start
 
+Note - I committed the main files only where need to to changes according to requirements of the project
+
 
